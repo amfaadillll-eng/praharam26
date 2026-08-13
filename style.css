@@ -1265,24 +1265,27 @@ footer .copyright {
 @media (max-width: 900px) {
 
     .navbar {
-        padding: 0 5%;
+        padding: 0 4%;
     }
 
     .navbar nav {
-        display: none;
+        display: flex;
+        gap: 18px;
+    }
+
+    .navbar nav a {
+        font-size: 10px;
+        letter-spacing: 1px;
     }
 
     .events-grid {
-        grid-template-columns:
-            repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .fund-section {
         grid-template-columns: 1fr;
-
         gap: 55px;
     }
-
 }
 
 
@@ -1293,84 +1296,80 @@ footer .copyright {
 @media (max-width: 600px) {
 
     .navbar {
-        height: 70px;
-
-        padding: 0 5%;
-    }
-.hero-brand img {
-    width: 100px;
-    max-height: 60px;
-}
-
-    .logo {
-        width: 95px;
+        height: 65px;
+        padding: 0 3%;
     }
 
-    .logo img {
-        width: 90px;
-        max-height: 48px;
+    /* MOBILE NAVIGATION */
+
+    .navbar nav {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        flex: 1;
+        justify-content: flex-start;
     }
+
+    .navbar nav a {
+        font-size: 8px;
+        letter-spacing: 0.7px;
+        white-space: nowrap;
+    }
+
+    .navbar nav a::after {
+        bottom: -5px;
+    }
+
+    /* REGISTER BUTTON */
 
     .nav-btn {
-        padding: 9px 14px;
-
-        font-size: 9px;
+        padding: 8px 10px;
+        font-size: 8px;
+        letter-spacing: 0.8px;
+        white-space: nowrap;
     }
-
 
     /* HERO */
 
+    .hero-brand img {
+        width: 100px;
+        max-height: 60px;
+    }
+
     .hero-content {
-        padding:
-            110px
-            15px
-            70px;
+        padding: 105px 15px 70px;
     }
 
     .present {
         font-size: 8px;
-
         letter-spacing: 4px;
-    }
-
-    .gold-line {
-        width: 60px;
-
-        margin-bottom: 22px;
     }
 
     .hero h1 {
         font-size: 57px;
-
         letter-spacing: -4px;
     }
 
     .subtitle {
         margin-top: 23px;
-
         font-size: 11px;
-
         letter-spacing: 5px;
     }
 
     .tagline {
         font-size: 10px;
-
         line-height: 1.7;
     }
-
 
     /* COUNTDOWN */
 
     .countdown-container {
         gap: 4px;
-
         margin-top: 38px;
     }
 
     .time-box {
         min-width: 60px;
-
         padding: 12px 5px;
     }
 
@@ -1380,7 +1379,6 @@ footer .copyright {
 
     .time-box small {
         font-size: 6px;
-
         letter-spacing: 1px;
     }
 
@@ -1388,12 +1386,10 @@ footer .copyright {
         font-size: 18px;
     }
 
-
     /* BUTTONS */
 
     .hero-buttons {
         flex-direction: column;
-
         align-items: center;
     }
 
@@ -1402,18 +1398,14 @@ footer .copyright {
         width: 220px;
     }
 
-
     /* SECTIONS */
 
     .intro,
     .section,
     .fund-section,
     .register-section {
-        padding:
-            90px
-            6%;
+        padding: 90px 6%;
     }
-
 
     /* EVENTS */
 
@@ -1421,13 +1413,11 @@ footer .copyright {
         grid-template-columns: 1fr;
     }
 
-
     /* FUND */
 
     .fund-grid {
         grid-template-columns: 1fr;
     }
-
 
     /* TIMELINE */
 
@@ -1436,10 +1426,7 @@ footer .copyright {
     }
 
     .timeline-item {
-        grid-template-columns:
-            75px
-            40px
-            1fr;
+        grid-template-columns: 75px 40px 1fr;
     }
 
     .timeline-time {
@@ -1454,13 +1441,11 @@ footer .copyright {
         font-size: 10px;
     }
 
-
     /* REGISTER */
 
     .register-box {
         padding: 60px 20px;
     }
-
 }
 
 
@@ -1468,22 +1453,23 @@ footer .copyright {
    VERY SMALL DEVICES
 ========================================================= */
 
-@media (max-width: 380px) {
+@media (max-width: 420px) {
 
-    .hero h1 {
-        font-size: 48px;
+    .navbar {
+        padding: 0 10px;
     }
 
-    .time-box {
-        min-width: 53px;
+    .navbar nav {
+        gap: 8px;
     }
 
-    .time-box span {
-        font-size: 18px;
+    .navbar nav a {
+        font-size: 7px;
+        letter-spacing: 0.4px;
     }
 
-    .countdown-container {
-        gap: 2px;
+    .nav-btn {
+        padding: 7px 8px;
+        font-size: 7px;
     }
-
 }
