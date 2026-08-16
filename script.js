@@ -130,60 +130,21 @@ const countdownInterval =
    GOOGLE FORM
 ========================================================= */
 
-// Replace this with your actual Google Form URL.
-//
-// Example:
-//
-// const googleFormURL =
-// "https://forms.gle/XXXXXXXXXXXX";
+// PRAHARAM '26 Registration & Contribution Form
 
-const googleFormURL = "#";
+const googleFormURL =
+    "https://docs.google.com/forms/d/e/1FAIpQLScDgaDlLFS5DSDYPwH6lDhesfFRS_N2kTVexyQbdPYu4I6fNw/viewform?usp=dialog";
 
 
 const registerButton =
-    document.getElementById(
-        "registerButton"
-    );
+    document.getElementById("registerButton");
 
 
 if (registerButton) {
 
-    registerButton.addEventListener(
-        "click",
-        function(event) {
-
-            /* -----------------------------------------
-               FORM NOT AVAILABLE YET
-            ----------------------------------------- */
-
-            if (
-                googleFormURL === "#" ||
-                googleFormURL.trim() === ""
-            ) {
-
-                event.preventDefault();
-
-                alert(
-                    "Registration will be available soon."
-                );
-
-                return;
-            }
-
-
-            /* -----------------------------------------
-               OPEN GOOGLE FORM
-            ----------------------------------------- */
-
-            registerButton.href =
-                googleFormURL;
-
-        }
-    );
+    registerButton.href = googleFormURL;
 
 }
-
-
 /* =========================================================
    NAVBAR SCROLL EFFECT
 ========================================================= */
