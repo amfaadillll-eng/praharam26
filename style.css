@@ -1447,6 +1447,14 @@ footer .copyright {
         padding: 60px 20px;
     }
 }
+.resqhive-product {
+    padding: 35px 20px 28px;
+}
+
+.resqhive-product img {
+    width: 62px;
+    height: 62px;
+}
 
 
 /* =========================================================
@@ -1472,4 +1480,66 @@ footer .copyright {
         padding: 7px 8px;
         font-size: 7px;
     }
+}
+/* =========================================================
+   RESQHIVE PRODUCT
+========================================================= */
+
+.resqhive-product {
+
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 45px 20px 35px;
+
+    background: #080808;
+
+}
+
+
+.resqhive-product img {
+
+    width: 72px;
+
+    height: 72px;
+
+    object-fit: contain;
+
+    display: block;
+
+    border-radius: 16px;
+
+    opacity: 0.82;
+
+    filter:
+        drop-shadow(
+            0 0 18px
+            rgba(0, 110, 255, 0.18)
+        );
+
+    transition:
+        transform 0.35s ease,
+        opacity 0.35s ease,
+        filter 0.35s ease;
+
+}
+
+
+.resqhive-product img:hover {
+
+    opacity: 1;
+
+    transform: translateY(-4px) scale(1.05);
+
+    filter:
+        drop-shadow(
+            0 0 25px
+            rgba(0, 110, 255, 0.35)
+        );
+
 }
